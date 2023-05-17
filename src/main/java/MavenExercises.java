@@ -1,3 +1,5 @@
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Scanner;
 //
 //Create a new class with a main method that prompts the user for input and does the following (using the StringUtils class)
@@ -22,7 +24,7 @@ public class MavenExercises {
         String input = scanner.nextLine();
         System.out.println("You Entered: " + input);
         System.out.println("Flipped Case: " + input.toUpperCase());
-        System.out.println("Reversed String: " + new StringBuilder(input).reverse().toString());
+        System.out.println("Reversed: \"" + StringUtils.reverse(input) + "\"");
         System.out.println("Origional String: " + input);
 
 
